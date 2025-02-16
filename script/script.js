@@ -13,8 +13,8 @@ if (isNaN(UserAnni) || isNaN(UserKm) || (UserKm == "" || UserAnni == "")){
     // se utente ha meno di 18 anni applico uno sconto del 20% 
     if (UserAnni < 18){
         let ScontoMinorenni =  ((CostoBiglietto * 20) / 100);
-        let PrezzoMinorenni = parseFloat(CostoBiglietto - scontoMinorenni);
-        alert(`il prezzo è di ${prezzoMinorenni}€`);
+        let PrezzoMinorenni = parseFloat(CostoBiglietto - ScontoMinorenni);
+        alert(`il prezzo è di ${PrezzoMinorenni}€`);
     }
     // se utente ha piu di 65 anni applico sconto del 40% 
     else if (UserAnni > 65){
